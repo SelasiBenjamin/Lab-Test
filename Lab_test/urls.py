@@ -19,10 +19,10 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('independenceday/', include("independenceday.urls")),
-    path('', RedirectView.as_view(url = 'independenceday/', permanent = True)),
-    path('republic/', include("republic.urls")),
-    path('', RedirectView.as_view(url = 'republic/', permanent = True)),
-    path('payday/', include("payday.urls")),
-    path('', RedirectView.as_view(url = 'payday/', permanent = True))
+    path('isitindependenceday/', include("independenceday.urls")),
+    path('', RedirectView.as_view(url = 'isitindependenceday/', permanent = True)),
+    path('isitrepublicday/', include("republic.urls")),
+    path('', RedirectView.as_view(url = 'isitrepublicday/', permanent = True)),
+    path('isitpayday/', include("payday.urls")),
+    path('', RedirectView.as_view(url = 'isitpayday/', permanent = True))
 ]
